@@ -9,7 +9,9 @@ var filename = 'superagent.js';
 function build () {
   console.log(chalk.green('Building superagent bundle : ' + filename));
 
-  browserify()
+  browserify({
+    standalone: 'superagent'
+  })
     .require('superagent')
     .bundle()
     .pipe(fs.createWriteStream(path.join(__dirname, filename)));
@@ -19,6 +21,6 @@ function build () {
 trash([filename])
   .then(build)
   .catch(function (err) {
-    console.log(chalk.red.bold('Failed to delete %s', filename));
-    build();
+    console.log(chalk.red.bold('Failed to delete', filename));
+    return build();
    });
