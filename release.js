@@ -11,4 +11,4 @@ latestVersion('superagent')
   })
   .catch(function (error) {
     console.log(chalk.red.bold('Failed to release', error.message));
-  })
+  });
