@@ -1,6 +1,6 @@
 {
   "name": "superagent-dist",
-  "version": "1.5.0",
+  "version": "1.6.1",
   "description": "superagent.js for the browser",
   "main": "superagent.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "chalk": "^1.1.1",
     "latest-version": "^2.0.0",
     "release-it": "^2.3.1",
-    "superagent": "1.5.0",
+    "superagent": "1.6.1",
     "trash": "^3.2.0"
   }
 }
