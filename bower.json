@@ -5,7 +5,7 @@
   "dependencies": {},
   "ignore": [
     "build.js",
-    "release.js",
+    "update.js",
     "node_modules"
   ]
 }
